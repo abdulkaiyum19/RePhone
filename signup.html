@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - RePhone</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/image/Picture1.png" alt="RePhone Logo">
+        </div>
+        
+        <div class="menu">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <!-- <li class="dropdown">
+                    <a href="#">Services <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Recycle Device</a></li>
+                        <li><a href="#">Track Pickup</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Sell Old Phones</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact</a></li> -->
+            </ul>
+        </div>
+
+        <div class="auth">
+            <a href="/login.html" class="btn-login">Login</a>
+        </div>
+    </nav>
+
+    <!-- Sign-Up Form -->
+    <div class="signup-container">
+        <h2>Create an Account</h2>
+        <form id="signup-form">
+            
+            <!-- First Name & Last Name in a Row -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" placeholder="Enter First Name" required>
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" placeholder="Enter Last Name" required>
+                    <small class="error-message"></small>
+                </div>
+            </div>
+
+            <!-- Gender (Dropdown) & Date of Birth in a Row -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" required>
+                    <small class="error-message"></small>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" placeholder="Enter Your Location" required>
+                <small class="error-message"></small>
+            </div>
+
+            <!-- NID & Mobile Number in a Row -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nid">NID Number</label>
+                    <input type="text" id="nid" placeholder="Enter NID Number" required>
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" placeholder="Enter Mobile Number" required>
+                    <small class="error-message"></small>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Password" required>
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                <small class="error-message"></small>
+            </div>
+
+            <button type="submit" class="btn-signup">Sign Up</button>
+        </form>
+
+        <p class="login-link">Already have an account? <a href="#">Login here</a></p>
+    </div>
+
+</body>
+</html>

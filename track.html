@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Product</title>
+    <link rel="stylesheet" href="track.css">
+    <script src="track.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <!-- <img src="/image/Picture1.png" alt="RePhone Logo"> -->
+        </div>
+        
+        <div class="menu">
+            <ul>
+                <!-- <li><a href="/index.html">Home</a></li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Tracking Container -->
+    <div class="track-container">
+        <h2>Track Your Product 📦</h2>
+        <p class="subtext">Enter your tracking number to see the status of your pickup or order.</p>
+
+        <form id="track-form">
+            <div class="form-group">
+                <label for="tracking-number">Tracking Number</label>
+                <input type="text" id="tracking-number" placeholder="Enter Tracking Number" required>
+            </div>
+
+            <button type="submit" class="btn-track">Track Now</button>
+        </form>
+
+        <!-- Tracking Status Display -->
+        <div id="tracking-result" class="tracking-status"></div>
+    </div>
+
+</body>
+</html>
